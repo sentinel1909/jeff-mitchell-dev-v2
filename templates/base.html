@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="screen.css" media="screen" />
+  <title>jeff-mitchell.dev | {% if section.title %} {{ section.title }} {% else %} | {{ page.title }} {% endif %}  </title>
+</head>
+<body>
+  <header>
+    <h1>jeff-mitchell.dev</h1>
+    <h2>mis-adventures with the Rust programming language</h2>
+  </header>
+  <nav>
+    <ul>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/blog">Blog</a>
+      <a href="/projects">Projects</a>
+      <a href="/resources">Resources</a>
+    </ul>
+  </nav>
+  <main>
+    {% block content %} {% endblock %}
+  </main>
+  <footer>
+    <p>&copy; Jeffery D. Mitchell | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
