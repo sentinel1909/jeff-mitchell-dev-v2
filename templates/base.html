@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="screen.css" media="screen" />
-  <title>jeff-mitchell.dev | {% if section.title %} {{ section.title }} {% else %} | {{ page.title }} {% endif %}  </title>
+  <title>jeff-mitchell.dev | Home  </title>
 </head>
 <body>
   <header>
@@ -19,15 +19,15 @@
       <a href="/projects">Projects</a>
       <a href="/resources">Resources</a>
       <a href="/atom.xml">RSS</a>
-      <a href="https://github.com/sentinel1909">GitHub</a>
-      <a href="https://query.rs">query.rs</a>
+      <a href="https://github.com/sentinel1909" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://query.rs" target="_blank" rel="noreferrer" >  query.rs</a>
     </ul>
   </nav>
   <main>
     {% block content %} {% endblock %}
   </main>
   <footer>
-    <p>&copy; Jeffery D. Mitchell | All Rights Reserved</p>
+    <p>&copy; Jeffery D. Mitchell | All Rights Reserved | Built with <a href="https://getzola.org" target="_blank" rel="noreferrer">Zola</a> | Hosted on <a href="https://netlify.com" target="_blank" rel="noreferrer">Netlify</a></p>
   </footer>
   <script src="scripts.js"></script>
 </body>

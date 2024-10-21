@@ -1,12 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section>
-  <h3>
-    Welcome!
-  </h3>
-  <article>
-    <p>This is the site home page.</p>
-  </article>
-</section>
+
+{{ section.content | safe }}
+
 {% endblock content %}

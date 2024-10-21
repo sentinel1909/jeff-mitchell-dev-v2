@@ -5,8 +5,6 @@
   <h3>
     {{ section.title }}
   </h3>
-  <article>
-    <p>This is the site about page.</p>
-  </article>
+  {{ section.content | safe }}
 </section>
 {% endblock content %}

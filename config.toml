@@ -11,6 +11,12 @@ compile_sass = true
 # Generate RSS feed
 generate_feeds = true
 
+# Taxonomies configuration
+taxonomies = [
+  { name = "categories", feed = true },
+  { name = "tags", feed = true },
+]
+
 # Site author
 author = "Jeff Mitchell"
 
@@ -32,7 +38,7 @@ highlight_code = true
 external_links_target_blank = true
 
 # Set external links to be nofollow
-external_links_no_follow = true
+external_links_no_referrer = true 
 
 [extra]
 # Put all your custom variables here
