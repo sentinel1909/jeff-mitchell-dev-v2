@@ -10,19 +10,25 @@
     <Li><a href="/tags">Tags</a></Li>
   </ul>
 </nav>
-{{ section.content | safe }}
+<section>
+  {{ section.content | safe }}  
+</section>
+<section>
 <ul>
   {% for page in paginator.pages %} 
   <li>
-    {{ page.title }}
-    {{ page.description | safe }}
-    { Word Count: {{ page.word_count }} words | Reading Time: {% if
+    <article>
+      <h3>{{ page.title }}</h3>
+      <h4>{{ page.description | safe }}</h4>
+      <p>{ Word Count: {{ page.word_count }} words | Reading Time: {% if
       page.reading_time >= 2 %} {{ page.reading_time }} minutes {% else %} {{
-      page.reading_time }} minute {% endif %} }
-    <a href="{{ page.permalink }}">Read more...</a>
+      page.reading_time }} minute {% endif %} }</p> 
+      <a href="{{ page.permalink }}">Do you want to know more?</a>
+    </article>
   </li>
   {% endfor %}
 </ul>
+</section>
 <nav>
   {% if paginator.previous %}
     <a href="{{ paginator.previous }}">Previous</a>

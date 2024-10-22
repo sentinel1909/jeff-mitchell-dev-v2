@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="A site mostly about Rust...mostly...">
+  <meta name="keywords" content="Rust">
+  <meta name="author" content="Jeff Mitchell">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="screen.css" media="screen" />
   <title>{{ "jeff-mitchell.dev" }}{% if section is defined and section.title is defined %} | {{ section.title }} {% endif %}{% if page is defined and page.title is defined %} | Blog Posts | {{ page.title }}{% endif %}</title>
@@ -30,5 +33,6 @@
     <p>&copy; Jeffery D. Mitchell | All Rights Reserved | Built with <a href="https://getzola.org" target="_blank" rel="noreferrer">Zola</a> | Hosted on <a href="https://netlify.com" target="_blank" rel="noreferrer">Netlify</a></p>
   </footer>
   <script src="scripts.js"></script>
+  <noscript>There is a small amount of JavaScript to embelish aspects of this page.</noscript>
 </body>
 </html>
