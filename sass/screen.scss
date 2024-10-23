@@ -1,36 +1,80 @@
+/* css variables */
+:root {
+  --site-background-color: hsl(42.9, 11.9%, 11.6%);
+  --site-font-color: hsl(0, 0%, 96%);
+  --site-heading-color: hsl(25, 100%, 71%);
+}
+
+/* begin css reset */
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-
 * {
   margin: 0;
 }
-
 
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
-
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
 }
 
-
 input, button, textarea, select {
   font: inherit;
 }
-
 
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-
 #root, #__next {
   isolation: isolate;
+}
+
+/* begin main styles */
+body {
+  background-color: var(--site-background-color);
+  font-family: sans-serif;
+  color: var(--site-font-color);
+  margin: 2em;
+}
+
+header {
+  color: var(--site-heading-color); 
+  text-align: right;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+main {
+  margin: 10em;
+}
+
+footer {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: var(--site-heading-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--site-heading-color);
+}
+
+a:hover {
+  font-weight: bold;
 }

@@ -1,0 +1,7 @@
+# gitignore configuration for jeff-mitchell-dev-v2
+
+# VS Code Settings
+.vscode
+
+# build artifacts
+public
