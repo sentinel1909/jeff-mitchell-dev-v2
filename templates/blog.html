@@ -4,12 +4,14 @@
 <h3>  
   {{ section.title }}
 </h3>
+<br />
 <nav class="navbar">
   <ul class="navbarItems">
     <li><a href="/categories">Categories</a></li>
     <Li><a href="/tags">Tags</a></Li>
   </ul>
 </nav>
+<br />
 <section>
   {{ section.content | safe }}  
 </section>
@@ -25,6 +27,7 @@
 </article>
 {% endfor %}
 </section>
+<br />
 <nav class="navbarBlog">
   {% if paginator.previous %}
     <a href="{{ paginator.previous }}">Previous</a>
