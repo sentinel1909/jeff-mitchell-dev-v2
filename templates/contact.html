@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section>
+  {{ section.content | safe }}
+</section>
+
+<fieldset>
+  <form action="/submit-form" method="POST">
+        <!-- Name field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <!-- Email field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Subject field -->
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject">
+        <br><br>
+
+        <!-- Message field -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <br><br>
+
+        <!-- Submit button -->
+        <button type="submit">Send Message</button>
+    </form>
+</fieldset>
+
+{% endblock content %}

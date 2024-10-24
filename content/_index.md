@@ -3,6 +3,8 @@ title = "Home"
 template = "index.html"
 +++
 
-### Welcome!
+## Hey, I'm Jeff!
 
-My name is Jeff Mitchell, and this is my so-called dev profile site. I'm a self-taught hobbyist coder who loves the Rust programming language.
+I'm a self-taught developer, IT generalize and junkie, and all around old school metaller. Welcome to my site! This site is somewhat of a mix-tape/reflection of myself.
+
+Here on my site you'll find my thoughts about programming languages and software development in general. I mostly like Rust, but will explore and write about other languages from time to time. I'll also write about my love of heavy metal music, which hopefully might influence exploration of your own. The Projects page will contain a bit of a dive into whatever mini-project I'm fiddling about with.

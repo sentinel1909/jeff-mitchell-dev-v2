@@ -4,8 +4,8 @@
 <h3>  
   {{ section.title }}
 </h3>
-<nav>
-  <ul>
+<nav class="navbar">
+  <ul class="navbarItems">
     <li><a href="/categories">Categories</a></li>
     <Li><a href="/tags">Tags</a></Li>
   </ul>
@@ -13,23 +13,19 @@
 <section>
   {{ section.content | safe }}  
 </section>
-<section>
-<ul>
-  {% for page in paginator.pages %} 
-  <li>
-    <article>
-      <h3>{{ page.title }}</h3>
-      <h4>{{ page.description | safe }}</h4>
-      <p>{ Word Count: {{ page.word_count }} words | Reading Time: {% if
+<section class="article-grid">
+{% for page in paginator.pages %} 
+<article class="article-card">
+  <h3>{{ page.title }}</h3>
+  <h4>{{ page.description | safe }}</h4>
+  <p>{ Word Count: {{ page.word_count }} words | Reading Time: {% if
       page.reading_time >= 2 %} {{ page.reading_time }} minutes {% else %} {{
       page.reading_time }} minute {% endif %} }</p> 
-      <a href="{{ page.permalink }}">Do you want to know more?</a>
-    </article>
-  </li>
-  {% endfor %}
-</ul>
+  <a href="{{ page.permalink }}">Do you want to know more?</a>
+</article>
+{% endfor %}
 </section>
-<nav>
+<nav class="navbarBlog">
   {% if paginator.previous %}
     <a href="{{ paginator.previous }}">Previous</a>
   {% endif %}

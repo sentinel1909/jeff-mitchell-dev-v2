@@ -6,32 +6,42 @@
   <meta name="keywords" content="Rust">
   <meta name="author" content="Jeff Mitchell">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="{{ get_url(path="favicon.png") }}" />
   <link rel="stylesheet" type="text/css" href="{{ get_url(path="screen.css") }}" media="screen" />
   <title>{{ "jeff-mitchell.dev" }}{% if section is defined and section.title is defined %} | {{ section.title }} {% endif %}{% if page is defined and page.title is defined %} | Blog Posts | {{ page.title }}{% endif %}</title>
 </head>
 <body>
-  <header>
-    <h1>jeff-mitchell.dev</h1>
-    <h2>mis-adventures with the Rust programming language</h2>
-  </header>
-  <nav>
-    <ul>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/blog">Blog</a>
-      <a href="/projects">Projects</a>
-      <a href="/resources">Resources</a>
-      <a href="/atom.xml">RSS</a>
-      <a href="https://github.com/sentinel1909" target="_blank" rel="noreferrer">GitHub</a>
-      <a href="https://query.rs" target="_blank" rel="noreferrer" >  query.rs</a>
-    </ul>
-  </nav>
-  <main>
-    {% block content %} {% endblock %}
-  </main>
-  <footer>
-    <p>&copy; Jeffery D. Mitchell | All Rights Reserved | Built with <a href="https://getzola.org" target="_blank" rel="noreferrer">Zola</a> | Hosted on <a href="https://netlify.com" target="_blank" rel="noreferrer">Netlify</a></p>
-  </footer>
+  <div class="wrapper">
+    <header>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <h1>jeff-mitchell.dev</h1>
+      <h2>mis-adventures with the Rust programming language</h2>
+      <img src="{{ get_url(path="jeff-mitchell-dev-logo.png") }}" />
+    </header>
+    <nav class="navbar">
+      <ul class="navbarItems">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/projects">Projects</a></li> 
+        <li><a href="/resources">Resources</a></li> 
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/atom.xml">RSS</a></li>
+        <li><a href="https://github.com/sentinel1909" target="_blank" rel="noreferrer">GitHub</a></li> 
+        <li><a href="https://query.rs" target="_blank" rel="noreferrer">query.rs</a></li>
+      </ul>
+    </nav>
+    <main>
+      {% block content %} {% endblock %}
+    </main>
+    <footer>
+      <p>&copy; Jeffery D. Mitchell | All Rights Reserved | Built with <a href="https://getzola.org" target="_blank" rel="noreferrer">Zola</a> | Hosted on <a href="https://netlify.com" target="_blank" rel="noreferrer">Netlify</a></p>
+    </footer>
+  </div>
   <script src="scripts.js"></script>
   <noscript>There is a small amount of JavaScript to embelish aspects of this page.</noscript>
 </body>

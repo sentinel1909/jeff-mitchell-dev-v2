@@ -1,10 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
+
 <h3>
   {{ page.title }}
 </h3>
-<h4>{{ page.date }}</h4>
+<h4>
+  {{ page.date }}
+</h4>
+<article class="article-container">
+  {{ page.content | safe }}
+  <button>
+    <a href="/blog">Back to Blog Listing</a>
+  </button>
+</article>
 
-{{ page.content | safe }}
 {% endblock content %}
