@@ -3,7 +3,7 @@ title = "About"
 template = "about.html"
 +++
 
-This is a bit of a different about page. I wrote this piece at the request of the Shuttle crew. I decided it would make a great (hopefully not too long) about page.
+This is a bit of a different about page. I wrote this piece at the request of the [Shuttle](https://shuttle.dev) crew. I decided it would make a great (hopefully not too long) about page.
 
 ### Who am I?
 

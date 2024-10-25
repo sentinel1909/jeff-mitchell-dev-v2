@@ -3,7 +3,7 @@ title = "Resources"
 template = "resources.html"
 +++
 
-.This is my sort of clearing house of resources, both Rust related and Rust adjacent.
+This is my sort of clearing house of resources, both Rust related and Rust adjacent.
 
 ### Rust Language
 
