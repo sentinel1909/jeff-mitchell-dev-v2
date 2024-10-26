@@ -2,6 +2,13 @@
 
 {% block content %}
 
+<nav class="navbar">
+  <ul class="navbarItems">
+    <li><a href="/categories">Categories</a></li>
+    <Li><a href="/tags">Tags</a></Li>
+  </ul>
+</nav>
+<br />
 <h3>
   {{ page.title }}
 </h3>
@@ -10,9 +17,10 @@
 </h4>
 <article class="article-container">
   {{ page.content | safe }}
-  <button>
-    <a href="/blog">Back to Blog Listing</a>
-  </button>
 </article>
+<br />
+<nav class="navbarBlog">
+  <a href="/blog">Back to Blog Listing</a>
+</nav>
 
 {% endblock content %}
