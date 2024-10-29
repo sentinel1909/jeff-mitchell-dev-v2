@@ -40,3 +40,6 @@ This is my sort of clearing house of resources, both Rust related and Rust adjac
 - [This Week in Rust](https://this-week-in-rust.org)
 - [Welcome to the Jungle](https://wtjungle.com)
 - [Writing an OS in Rust](https://os.phil-opp.com/)
+- [The WorkFall Blog](https://learning.workfall.com/)
+- [The TMS Developer Blog](https://tms-dev-blog.com/)
+- [Luca Palmieri](https://www.lpalmieri.com/)

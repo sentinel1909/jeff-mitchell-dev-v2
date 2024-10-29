@@ -9,8 +9,22 @@ template = "index.html"
 
 I'm a self-taught, hobbyist developer, IT generalize and junkie, and all around old school metaller. Welcome to my site! This site is somewhat of a mix-tape/reflection of myself.
 
-Here you'll find my thoughts about programming languages and software development in general. I mostly like Rust, but will explore and write about other languages from time to time. I'll also write about my love of heavy metal music, which hopefully might influence exploration of your own. The Projects page will contain a bit of a dive into whatever mini-project I'm fiddling about with.
+Here you'll find my thoughts about programming languages and software development in general. I'm no computer scientist, so don't expect deep dives from an expert's perspective. I'm a guy messing about with stuff that he has no right to. I mostly like Rust, but will explore and write about other languages from time to time. I'll also write about my love of heavy metal music, which hopefully might influence exploration of your own. The Projects page will contain a bit of a dive into whatever mini-project I'm fiddling about with.
 
 I long for a web where you're not fed fake AI generated slop or exploited by an algorithm.
 
 I will never employ ads, trackers, or ask for money. My content is here for you to enjoy and benefit from. In putting myself out there, I hope to inspire others to do the same.
+
+### What's New
+
+I've added a few links to the resources page:
+
+- [The WorkFall Blog](https://learning.workfall.com/)
+- [The TMS Developer Blog](https://tms-dev-blog.com/)
+- [Luca Palmieri](https://www.lpalmieri.com/)
+
+Each of these blogs provided me with "bread crumbs" when I needed them, particularly on the Yew web framework for Rust. Luca Palmieri has been a guiding light in my own journey with Rust. I'm forever grateful for his work.
+
+### Rust Crate of the Week
+
+The Rust crate of the week is [cargo-generate](https://crates.io/crates/cargo-generate). It helps you make a new Rust project from a pre-define template or git repo.
