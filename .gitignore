@@ -3,5 +3,8 @@
 # VS Code Settings
 .vscode
 
+# macOS System Files
+.DS_store
+
 # build artifacts
 public

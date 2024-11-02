@@ -23,6 +23,9 @@ author = "Jeff Mitchell"
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+[search]
+index_format = "elasticlunr_json"
+
 # Generate a sitemap.xml
 generate_sitemap = true
 
