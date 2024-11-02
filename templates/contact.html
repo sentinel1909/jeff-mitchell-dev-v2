@@ -7,7 +7,8 @@
 </section>
 <br />
 <fieldset>
-  <form name="contact" method="#">
+  <form name="contact" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="293d5b31-9dc0-482f-8b1c-be325d24dc73"> 
         <!-- Name field -->
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -25,12 +26,20 @@
 
         <!-- Message field -->
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <textarea id="message" name="message" rows="5" columns="10" required></textarea>
         <br><br>
+        
+        <input type="checkox" name="botcheck" class="hidden" style="display: none;">
 
         <!-- Submit button -->
         <button type="submit">Send Message</button>
     </form>
 </fieldset>
+<br />
+<section>
+  <article>
+    <p>Powered by <a href="https://web3forms.com" target="_blank" rel="noreferrer">Web3Forms</a></p>
+  </article>
+</section>
 
 {% endblock content %}
