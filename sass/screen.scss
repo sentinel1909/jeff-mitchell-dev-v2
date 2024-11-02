@@ -6,6 +6,7 @@
   --site-dimensions-height: 100%;
   --site-dimensions-margin: 0;
   --site-link-colour: hsl(0, 0%, 100%);
+  --base-font-size: 1rem;
   --header-background-color: hsl(0, 0%, 20%);
   --header-text-colour: hsl(0, 0%, 100%);
   --nav-text-colour: hsl(0, 0%, 100%);
@@ -66,11 +67,11 @@ h6 {
 }
 
 /* Main styles */
-body,
-html {
+body {
   height: var(--site-dimensions-height);
   margin: var(--site-dimensions-margin);
   font-family: var(--site-main-font);
+  font-size: var(--base-font-size);
 }
 
 header {
@@ -80,6 +81,10 @@ header {
   padding: 1em;
   justify-content: space-between;
   align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
 }
 
 .hamburger {
@@ -134,7 +139,7 @@ main {
 }
 
 .navbarItems {
-  display: flex;
+ display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -150,8 +155,8 @@ main {
   text-decoration: none;
 }
 
-.navbarItems a:hover {
-  font-weight: bold;
+.navbarItems a:hover, footer a:hover {
+  text-decoration: underline;
 }
 
 .article-grid {
@@ -165,6 +170,7 @@ main {
 
 .article-card {
   background-color: var(--article-card-background);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border: 2px solid var(--article-card-border);
   padding: 1.25em;
 }
@@ -215,9 +221,10 @@ footer {
   background-color: var(--footer-background-color);
   color: var(--footer-text-colour);
   text-align: center;
-  padding: 1.25em;
+  padding: 1.25em; 
+  top: 100vh;
   bottom: 0;
-  position: relative;
+  position: sticky;
   width: 100%;
 }
 
@@ -243,7 +250,11 @@ footer a:hover {
 }
 
 /* media queries */
-@media (max-width: 760px) {
+@media (max-width: 1024px) {
+  body {
+    font-size: 1.125rem;
+  } 
+  
   .bar {
     display: block;
   }
