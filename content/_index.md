@@ -17,14 +17,8 @@ I will never employ ads, trackers, or ask for money. My content is here for you 
 
 ### What's New
 
-I've added a few links to the resources page:
-
-- [The WorkFall Blog](https://learning.workfall.com/)
-- [The TMS Developer Blog](https://tms-dev-blog.com/)
-- [Luca Palmieri](https://www.lpalmieri.com/)
-
-Each of these blogs provided me with "bread crumbs" when I needed them, particularly on the Yew web framework for Rust. Luca Palmieri has been a guiding light in my own journey with Rust. I'm forever grateful for his work.
+I've updated the projects page with a few bits and bobs.
 
 ### Rust Crate of the Week
 
-The Rust crate of the week is [cargo-generate](https://crates.io/crates/cargo-generate). It helps you make a new Rust project from a pre-define template or git repo.
+The Rust crate of the week is [Sycamore](https://sycamore.dev). I dabbled a little with this Rust UI library a couple of years ago, but the project seemed to hit a rough patch and felt like a bit of a dead end, so I drifted away. At the start of November, they've come roaring back with a major 0.9 update and a fresh web site. Check it out!
