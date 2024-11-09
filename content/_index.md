@@ -17,7 +17,7 @@ I will never employ ads, trackers, or ask for money. My content is here for you 
 
 ### What's New
 
-I've updated the projects page with a few bits and bobs.
+Added a link to [John's Codes](https://johns.codes). Great post there about building a chess engine in Zig, which has me thinking about doing something similar...in Rust.
 
 ### Rust Crate of the Week
 

@@ -43,3 +43,4 @@ This is my sort of clearing house of resources, both Rust related and Rust adjac
 - [The WorkFall Blog](https://learning.workfall.com/)
 - [The TMS Developer Blog](https://tms-dev-blog.com/)
 - [Luca Palmieri](https://www.lpalmieri.com/)
+- [John's Codes](https://johns.codes)
