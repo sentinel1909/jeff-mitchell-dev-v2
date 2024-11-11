@@ -47,7 +47,7 @@ fn main() -> Result<()> {
     let file_path = &args[1];
 
     // read the file into a buffer
-    let file = File::open(file_path)?;
+    let mut file = File::open(file_path)?;
     let mut buffer = Vec::new();
     file.read_to_end(&mut buffer)?;
 
