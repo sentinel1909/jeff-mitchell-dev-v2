@@ -19,6 +19,8 @@ I will never employ ads, trackers, or ask for money. My content is here for you 
 
 Added a link to [John's Codes](https://johns.codes). Great post there about building a chess engine in Zig, which has me thinking about doing something similar...in Rust.
 
+Note that the form on the Contact page is active and will send me an email via Web3Forms. I spent some time today to make the layout look a little better.
+
 ### Rust Crate of the Week
 
 The Rust crate of the week is [Sycamore](https://sycamore.dev). I dabbled a little with this Rust UI library a couple of years ago, but the project seemed to hit a rough patch and felt like a bit of a dead end, so I drifted away. At the start of November, they've come roaring back with a major 0.9 update and a fresh web site. Check it out!

@@ -44,3 +44,4 @@ This is my sort of clearing house of resources, both Rust related and Rust adjac
 - [The TMS Developer Blog](https://tms-dev-blog.com/)
 - [Luca Palmieri](https://www.lpalmieri.com/)
 - [John's Codes](https://johns.codes)
+- [Making a simple HTTP webserver in C](https://bruinsslot.jp/post/simple-http-webserver-in-c/)
