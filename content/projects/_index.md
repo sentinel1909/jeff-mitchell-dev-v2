@@ -19,15 +19,15 @@ I'm a fan of using Shuttle's Service trait. It's more flexible and, in my opinio
 
 I mess about with stuff so that you don't have to. Anyone in their right mind would build their API with Axum (or the other framework of your choice) and call it a day, but not me! I'm going nap-of-earth with Hyper and Tokio, just in case you want to see for yourself what not to do. I've managed to create a skeleton API and have turned it into a template of sorts. It's a mainly a learning ground for me, as I need to get my hands dirty.
 
+[dev-blog-api](https://github.com/sentinel1909/dev-blog-api)
+
+I'm currently exploring [Apache OpenDAL](https://opendal.apache.org/) and it's ability to allow me to leverage Cloudflare R2 storage. I'm building an API for my developer blog, which will eventually serve to power a revised version of my blog. OpenDAL is excellent, and despite an initial learning curve hump, pretty straightforward to use.
+
 ### Frontend Development
 
 [Shuttle Template - Yew](https://github.com/sentinel1909/shuttle-template-yew)
 
 I don't want to be the billionth person learning React. I enjoy front end development with Rust and have been steadily picking up how to do things with [Yew](https://yew.rs). I think, unfortunately, Yew is kinda dead and not being actively developed. Don't let that stop you though, it's mature enough for production and is a viable choice for front end development using Rust and WebAssembly. I've created a template which uses Axum to serve up a Yew frontend site.
-
-[astronomy-lover.net](https://astronomy-lover.net)
-
-I haven't put the code up on GitHub for this yet, but this is a site done in WebAssembly using Leptos. The front end is served up by Axum and the whole thing is hosted on Shuttle.
 
 ### Doing Things with Community Crates
 

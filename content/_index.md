@@ -23,4 +23,4 @@ Note that the form on the Contact page is active and will send me an email via W
 
 ### Rust Crate of the Week
 
-The Rust crate of the week is [Sycamore](https://sycamore.dev). I dabbled a little with this Rust UI library a couple of years ago, but the project seemed to hit a rough patch and felt like a bit of a dead end, so I drifted away. At the start of November, they've come roaring back with a major 0.9 update and a fresh web site. Check it out!
+The Rust crate of the week is [opendal](https://crates.io/crates/opendal). I'm using it, together with Shuttle, to explore using Cloudflare R2 storage to host assets, such as markdown posts for a blog. In the future I hope to also use Cloudflare R2 for hosting photos...as I want to build a photography oriented blog.
