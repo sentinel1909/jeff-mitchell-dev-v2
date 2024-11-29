@@ -17,10 +17,12 @@ I will never employ ads, trackers, or ask for money. My content is here for you 
 
 ### What's New
 
-Added a link to [John's Codes](https://johns.codes). Great post there about building a chess engine in Zig, which has me thinking about doing something similar...in Rust.
-
-Note that the form on the Contact page is active and will send me an email via Web3Forms. I spent some time today to make the layout look a little better.
+I'm going to spend some time over the next while and update some of the very old content I started to write in the spring of 2022. I know a lot more about Rust now and I think it's high time some of this old content be freshened.
 
 ### Rust Crate of the Week
 
-The Rust crate of the week is [opendal](https://crates.io/crates/opendal). I'm using it, together with Shuttle, to explore using Cloudflare R2 storage to host assets, such as markdown posts for a blog. In the future I hope to also use Cloudflare R2 for hosting photos...as I want to build a photography oriented blog.
+The Rust crate of the week is [opendal](https://crates.io/crates/opendal). I'm using it, together with Shuttle, to explore using Cloudflare R2 storage to host assets, such as markdown posts for a blog. In the future I hope to also use Cloudflare R2 for hosting photos...as I want to build a photography oriented blog...eventually. :)
+
+### Special Announcements
+
+The [Christmas Code Hunt](https://www.shuttle.dev/cch) from Shuttle is on for 2024!

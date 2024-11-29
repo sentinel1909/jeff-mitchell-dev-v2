@@ -16,7 +16,7 @@
   {{ page.title }}
 </h3>
 <h4>
-  {{ page.date }}
+  {{ page.date }} {% if page.updated %} (Last Updated: {{page.updated}}) {% endif %}
 </h4>
 <article class="article-container">
   {{ page.content | safe }}
