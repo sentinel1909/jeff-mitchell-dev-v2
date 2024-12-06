@@ -2,6 +2,7 @@
 title = "Pouring the Footings: Compound Data Types"
 description = "A continued study of the basics in Rust, focusing on compound data types."
 date = "2022-04-18"
+updated = "2024-12-05"
 [taxonomies]
 categories = ["Beginner Guides"]
 tags = ["rust", "data types", "compound"]
@@ -15,11 +16,11 @@ A tuple can contain multiple values, each with their own type, into one single e
 
 We can declare a tuple like so:
 
-```
+```Rust
 let survey_result: (&str, u8, bool) = ("John", 36, true);
 ```
 
-We’ve created a variable name called survey_result and bound a string slice (haven’t talked about strings yet, don’t worry for now), an integer, and a boolean together into a tuple. This variable could represent the data received after submission of a survey form. There are type annotations immediately following the variable name. These are optional. In most cases, Rust can “infer” (figure out) the types needed.
+We’ve created a variable name called `survey_result` and bound a string slice (haven’t talked about strings yet, don’t worry for now), an integer, and a boolean together into a tuple. This variable could represent the data received after submission of a survey form. There are type annotations immediately following the variable name. These are optional. In most cases, Rust can “infer” (figure out) the types needed.
 
 There are a couple of different ways to access the values inside a tuple.
 
@@ -27,7 +28,7 @@ _Via Indicies_
 
 Individual values inside a tuple are indexed from 0, 1, 2… similar to arrays or vectors. Values can be accessed with a (.) followed by the value index, like so:
 
-```
+```Rust
 fn main() {
     let survey_result: (&str, u8, bool) = ("John", 36, true);
     let name = survey_result.0;
@@ -40,11 +41,12 @@ _Via Destructuring_
 
 The index method is a little verbose and it can be difficult to track the indicies if the tuple is large. It’s more elegant (and efficient) to use the destructuring method, like so:
 
-```
+```Rust
 fn main() {
      let survey_result: (&str, u8, bool) = ("John", 36, true);
      let (name, age, answer) = survey_result;
      println!("{}, aged {}, answered {} on the survey form.", name,    age, answer);
+}
 ```
 
 We’ve created the same tuple named survey_result and bound the same three values as the previous example. Next, we bind the individual values within the tuple to three new variables named name, age, and answer. We’ve used the destructuring pattern instead of three separate let statements. Finally, we print out the result to the console.
@@ -55,7 +57,7 @@ Tuples are useful for small data structures, but they become unwieldy for more c
 
 The next compound data type is an array. Similar to tuples, arrays are fixed length and cannot grow or shrink. Unlike tuples, arrays can only contain the same type of basic values. Arrays are useful in situations where a fixed number of elements is desired. An example array of the names of the days of the week can be created like so:
 
-```
+```Rust
 let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 ```
 
@@ -63,7 +65,7 @@ I haven’t discussed memory yet as it relates to Rust, but similar to tuples, a
 
 Arrays are declared with square brackets and can receive an optional type declaration, like so:
 
-```
+```Rust
 let numbers: [i32; 6] = [1, 2, 3, 4, 5, 6];
 ```
 
@@ -71,7 +73,7 @@ We’ve created an array of six integers and bound it to the variable named numb
 
 If for some reason an array is needed that initially has all the same elements, a short form can be used to declare it, like so:
 
-```
+```Rust
 let initial_values = [3; 3];
 ```
 
@@ -79,7 +81,7 @@ This creates an array with three elements, all having the integer value 3.
 
 Elements within an array are accessed by referencing the variable name and appending an index surrounded with square brackets, like so:
 
-```
+```Rust
 fn main() {
      let weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
