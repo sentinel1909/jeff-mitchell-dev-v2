@@ -17,12 +17,12 @@ I will never employ ads, trackers, or ask for money. My content is here for you 
 
 ### What's New
 
-I'm going to spend some time over the next while and update some of the very old content I started to write in the spring of 2022. I know a lot more about Rust now and I think it's high time some of this old content be freshened.
+December is just about done. This site and blog were quiet for December as I was engrossed in Shuttle's Christmas Code Hunt (CCH 2024). I didn't complete it, and it was equal parts enjoyable and frustrating. I learned quite a bit and now have to start unpacking some of that here.
 
 ### Rust Crate of the Week
 
-The Rust crate of the week is [opendal](https://crates.io/crates/opendal). I'm using it, together with Shuttle, to explore using Cloudflare R2 storage to host assets, such as markdown posts for a blog. In the future I hope to also use Cloudflare R2 for hosting photos...as I want to build a photography oriented blog...eventually. :)
+The Rust crate of the week is [leaky-bucket](https://crates.io/crates/leaky-bucket). This crate gives you a token-based rate limiter based on the [leaky bucket algorithm](https://en.wikipedia.org/wiki/Leaky_bucket). This crate was a great help in Day 9 of Shuttle's CCH 2024 edition, in which we had to build a milk and cookies production factory for Santa.
 
 ### Special Announcements
 
-The [Christmas Code Hunt](https://www.shuttle.dev/cch) from Shuttle is on for 2024!
+Happy New Year everyone! 2025 is almost on our doorstep. This site was a little too quiet in the later half of the year. Gonna get back at it!
