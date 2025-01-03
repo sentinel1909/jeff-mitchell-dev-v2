@@ -2,14 +2,19 @@
 title = "Is it Something or Nothing: The Option Type"
 description = "An introduction to Rust's Option type."
 date = "2022-09-13"
+updated = "2025-01-02"
 [taxonomies]
 categories = ["Intermediate Guides"]
 tags = ["rust", "enums", "option"]
 +++
 
-I apologize, dear readers, for my lack of consistency in posting here on Medium. Writing and generating content is a challenge for me. If I can provide you with a nugget of perspective once a month, that’s what I’m going to aim for. As the saying goes, practice makes perfect, so eventually, you might see more from me. I thank all of you for your interest in reading my thoughts on the Rust language.
+There's a saying that null values were a "billion dollar mistake". Search history, you'll quickly find the evidence of the havoc of "nothing". Nothing values are notorious, but somehow necessary. How exactly do we represent a thing that might be nothing?
 
-In an earlier article, I introduced the notion of enumerations, or enums, that are useful to represent types in Rust. You’ll also recall that Enums can optionally contain data. It’s time to introduce one of two special Rust enums…the Option type. Today I give you a short bite on this topic.
+How indeed.
+
+Riddles and existential arguments aside, let's take a look at how the Rust language chooses to represent something...that might actually be nothing.
+
+In an [earlier article](@/blog/2022/2022_05_21_bigger_building_blocks_intro_to_enumerations.md), I introduced the notion of enumerations, or enums, that are useful to represent types in Rust. You’ll also recall that Enums can optionally contain data. It’s time to introduce one of two special Rust enums…the Option type. Today I give you a short bite on this topic.
 
 An Option can contain something and or it can contain nothing. It’s a little like Schrödinger's Cat, it might be alive (contains something) or it might be dead (contains nothing) and you don’t know until you check. Let’s dive in.
 
