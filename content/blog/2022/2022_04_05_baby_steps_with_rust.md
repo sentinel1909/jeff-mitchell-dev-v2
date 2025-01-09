@@ -2,7 +2,7 @@
 title = "Baby Steps with Rust"
 description = "Every journey starts with small steps, this is an introduction to the Rust programming language."
 date = "2022-04-05"
-updated = "2024-11-28"
+updated = "2025-01-08"
 [taxonomies]
 categories = ["Beginner Guides"]
 tags = ["rust", "hello world"]
