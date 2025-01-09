@@ -7,7 +7,7 @@ categories = ["Beginner Guides"]
 tags = ["rust", "collections", "vectors"]
 +++
 
-## Indtroduction
+## Introduction
 
 Today I resume my journey through the Rust Book, in the spotlight is the vector type.
 
