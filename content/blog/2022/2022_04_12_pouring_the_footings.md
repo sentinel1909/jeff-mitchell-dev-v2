@@ -54,7 +54,10 @@ _Assigning Variables_
 
 Programming languages would be all but useless without variables. Variables allow the creation of programs that can accept a wide variety of input to do some action. In Rust, the act of creating a variable and giving it a value looks like this:
 
+```rust
 let album = “Attero Dominatus”;
+```
+
 Here we bind a string slice (more about that in another article) to a variable named album, using the let keyword.
 
 _Immutability of Variables_

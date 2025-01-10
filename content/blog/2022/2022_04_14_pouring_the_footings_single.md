@@ -16,7 +16,8 @@ I’ve covered the following basics so far:
 - creating a Hello, World
 - use of constants
 - variables, mutability, shadowing, and comments
-- I’ll now turn to another basic language building block, data types. Data types are at the core of getting things done in Rust.
+
+I’ll now turn to another basic language building block, data types. Data types are at the core of getting things done in Rust.
 
 There are two broad data types available, single value and compound value. This article will focus on single value types. Compound value types are on deck as they deserve attention on their own.
 
@@ -30,7 +31,7 @@ An integer is a number without a fractional component and can be signed or unsig
 
 Here’s an example of an integer variable:
 
-```
+```rust
 let life = 42;
 ```
 
@@ -42,7 +43,7 @@ A floating-point number has a decimal component. Rust supports 32-bit (f32) and 
 
 Let’s create a floating-point variable:
 
-```
+```rust
 let pi = 3.14;
 ```
 
@@ -54,7 +55,7 @@ Rust supports all the basic mathematical operations that one would expect in a p
 
 The combined knowledge I’ve written about in my articles thus far allows us to write a tiny program to do math on integers or floating point numbers. Here’s one possiblity:
 
-```
+```rust
 fn main() {
      let x = 5;
      let y = 6;
@@ -82,7 +83,7 @@ _Character_
 
 The final simple single value is a character. Characters are bound to variable names like so:
 
-```
+```rust
 let char = 'Z';
 ```
 
@@ -94,6 +95,6 @@ The basic building blocks in Rust are pretty close to my ancient coding knowledg
 
 There are lots of subtleties to read about regarding the single value data types, I invite you to consult The Rust Book should you wish to learn more.
 
-References
+### References
 
 [The Rust Programming Language, Chapter 3.2](https://doc.rust-lang.org/book/ch03-02-data-types.html)
