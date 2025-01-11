@@ -120,10 +120,10 @@ _Dependencies_
     - a service level request wrapper
   - ServiceResponse
     - a service level response wrapper
-    - in the Transform trait there is a type EitherBody. EitherBody is an enum with two variants, Left and Right. Each variant can contain a BoxBody type, which is a boxed message body with boxed errors
+    - in the Transform trait there is a type `EitherBody`. `EitherBody` is an enum with two variants, `Left` and `Right`. Each variant can contain a `BoxBody` type, which is a boxed message body with boxed errors; they are boxed so that the compiler knows their size at compile time.
   - Transform
     - defines the interface of a service factory and is what builds our middleware service
-- we need the Error struct from actix_web
+- we need the `Error` struct from actix_web
 
 - there are a few things from the standard library that are necessary, in order to enable working with futures
   - ready
@@ -145,7 +145,7 @@ Middleware is always implemented for a type. We need two structs:
 
 _Transform trait_
 
-When you push aside all the trait bounds and type definitions, the core of the transform trait is the new_transform function. This function takes a &self reference and a service as parameters, and returns a future. You can think of this function as a factory that creates your middleware service. It's necessary for each middleware service that you make.
+When you push aside all the trait bounds and type definitions, the core of the transform trait is the `new_transform` function. This function takes a `&self` reference and a service as parameters, and returns a future. You can think of this function as a factory that creates your middleware service. It's necessary for each middleware service that you make.
 
 _Service trait_
 
@@ -226,7 +226,7 @@ If you have multiple middleware pieces, you write each one separately and wrap i
 
 Made it! I hope you enjoyed this short journey through Actix Web middleware. This is not exhaustive, and I'm sure there are a million nuances I've missed. I hope I've captured for you the flow of what you need to write your own. Remember, the boiler plate above can be added to your project and it will just sit and be ready for expansion. Once it's done, it's done and you just need to add your logic to the call function within the Service trait implementation.
 
-My purpose here was to understand full blow middleware, so that's been the focus of this piece. I would be mistaken to not say that there is a simpler way to do middleware, if it's literally something dead simple. It's experimental right now, but will likely graduate sometime soon. [Simpler Actix Web Middleware](https://docs.rs/actix-web-lab/latest/actix_web_lab/middleware/fn.from_fn.html)
+My purpose here was to understand full blown middleware, so that's been the focus of this piece. I would be mistaken to not say that there is a simpler way to do middleware, if it's literally something dead simple. It's experimental right now, but will likely graduate sometime soon. [Simpler Actix Web Middleware](https://docs.rs/actix-web-lab/latest/actix_web_lab/middleware/fn.from_fn.html)
 
 I invite you to dig deeper in the articles below, especially Luca's. He's developing the Pavex web framework and in doing that, having to figure out his own take a middleware system. It's a terrific read.
 
