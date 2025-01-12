@@ -30,3 +30,7 @@ The Rust crate of this week is [Hyper](https://hyper.rs). Off and on, I've been 
 ### Special Announcements
 
 I recently subscribed to the [Rust Trends](https://rust-trends.com/) newsletter. I highly recommend subscribing, loads of great content there. I reached out to the owner and requested if I could link from here and he graciously agreed.
+
+### Blog Highlight of the Week
+
+I discovered this blog post, [Tips for Faster Rust Compile times](https://corrode.dev/blog/tips-for-faster-rust-compile-times/?ref=dailydev) in my [daily.dev](https://daily.dev) feed this morning. Well worth a read!
