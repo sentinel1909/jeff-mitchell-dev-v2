@@ -25,7 +25,7 @@ My non-Rust goal is to get better acquainted with Databases. I'm tired of Googli
 
 ### Rust Crate of the Week
 
-The Rust crate of this week is [Hyper](https://hyper.rs). Off and on, I've been learning about how to use HTTP in Rust programs. Hyper is the de-facto standard that the community has coalesced around. Many Rust tools have roots in Hyper, such as the [Axum](https://crates.io/crates/axum) web framework and the [Reqwest}(https://crates.io/crates/reqwest) HTTP client library.
+The Rust crate of this week is [Hyper](https://hyper.rs). Off and on, I've been learning about how to use HTTP in Rust programs. Hyper is the de-facto standard that the community has coalesced around. Many Rust tools have roots in Hyper, such as the [Axum](https://crates.io/crates/axum) web framework and the [Reqwest](https://crates.io/crates/reqwest) HTTP client library.
 
 ### Special Announcements
 

@@ -1,6 +1,6 @@
 +++
 title = "Keeping You Guessing" 
-description = "An article providing dmy take on the Guessing Game program from Chapter 2 of The Rust Book"
+description = "An article providing my take on the Guessing Game program from Chapter 2 of The Rust Book"
 date = 2025-01-04
 authors = ["Jeff Mitchell"]
 draft = false

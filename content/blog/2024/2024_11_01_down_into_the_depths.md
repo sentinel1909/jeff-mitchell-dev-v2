@@ -1,6 +1,6 @@
 +++
 title = "Down into the Depths"
-description = "A article which explores how to how to create a hex dumper in Rust."
+description = "A article which starts to explore how to how to create a hex dumper in Rust."
 date = "2024-11-01"
 authors = ["Jeff Mitchell"]
 draft = false
@@ -13,7 +13,7 @@ tags = ["file I/O, hexadecimal"]
 
 I've been doing a lot with Rust and web dev, both front and back, since doubling down on the language a couple of years ago. There are two months left in 2024 and it's time for a shift of gears.
 
-For awhile I'm going to go low, like very low.  This article by Tania Rascia served to inspire: [Understanding Bits, Bytes, and Numerical Bases](https://www.taniarascia.com/bits-bytes-bases-and-a-hex-dump-javascript/)
+For awhile I'm going to go low, like very low. This article by Tania Rascia served to inspire: [Understanding Bits, Bytes, and Numerical Bases](https://www.taniarascia.com/bits-bytes-bases-and-a-hex-dump-javascript/)
 
 I recommend reading Tania's work before continuing. She provides probably the easiest to understand explanation I've ever read. Like seriously, it's really good.
 
@@ -60,9 +60,10 @@ fn main() -> Result<()> {
     // output the length of the buffer
     println!("Buffer length: {} bytes", buffer.len());
 
-    Ok(()) 
+    Ok(())
 }
 ```
+
 ## Breaking it Down
 
 Ok, let's break this down.
@@ -78,10 +79,10 @@ The program flows like this:
 - reads the contents into the buffer
 - makes a new vector by converting the decimal representation of each byte entry into hexadecimal
   - given our `hex_buffer` is a vector, we can use an iterator combined with a map function to transform the decimal bytes into their hexidecimal representation
-- outputs a message along with the file contents, with each byte shown as a hexadecimal number 
+- outputs a message along with the file contents, with each byte shown as a hexadecimal number
 - outputs a message stating the length of the buffer, which is the number of bytes read
 
-That's it!   
+That's it!
 
 There's more work to do, but that's enough for this article.
 
