@@ -2,12 +2,13 @@
 title = "Simple Website Hosting with Shuttle"
 description = "A brief article on how to host static web site files on Shuttle."
 date = "2023-06-05"
+updated = "2025-01-11"
 [taxonomies]
 categories = ["How-To"]
 tags = ["rust", "static files", "shuttle"]
 +++
 
-## Simple Website Hosting
+## Simple Website Hosting...with Rust
 
 I discovered [Shuttle](https://shuttle.rs) in mid-to-late 2022. I had _just_ begun to develop the slightest notion of what I was doing with the Rust, since finishing Jayson Lennon's Rust course earlier in the year on [Zero to Mastery](https://zerotomastery.io). My learning has always been through a cocktail of blog posts on Medium, random articles on the internet, and bits of Stack Overflow. Hosting my Rust projects was always a struggle for me. I had started Luca Palmieri's "Zero to Production in Rust", probably too early, and Chapter 5 of the book on deployment hadn't really stuck. I wanted to crack the deployment bits, because building things and letting them languish on my hard drive was not something I was interested in. For better for worse, I like to build in public. In reality, given the noise on the internet, it's unlikely anyone ever notices, but I enjoy the illusion that I am somehow helping others.
 
@@ -15,17 +16,17 @@ There was an article I hit on Medium at one point about getting your Dockerized 
 
 Unfortunately, that first site was difficult to maintain, because my skills were still on the weak side, so I abandoned it.
 
-I still longed for a way to quickly and easily put my creations out into the world.
+I still longed for a way to quickly and easily put my creations out into the world. I've never been one to be happy fiddling endlessly with the Fibonacci sequence as a means of learning programming.
 
 ### Enter Shuttle
 
-In those early days of discovering the how's of deployment with Rust, the thing I came away with most was how complex it was, even for my simple little static website. There was a lot of hacking around and trial and error getting that first Dockerfile together such that railway.app would actually accept and build it. Granted, once it was done it was done, but I didn't enjoy the process of getting to a finished DockerFile. I had heard of Shuttle by this point, but when I first discovered this beautiful thing, static file hosting was not yet available. It eventually came along and somewhere early in 2023 I delightedly started to work with static files. I started contributing to the Shuttle documentation for the feature, helping flesh out the instructions and hopefully making the feature easier for others to read, understand, and implement. Shuttle neatly and tidyly takes the pain of Rust deployments away, and I wanted to do my part in showing that to the world in the clearest way I could.
+In those early days of discovering the how's of deployment with Rust, the thing I came away with most was how complex it was, even for my simple little static website. There was a lot of hacking around and trial and error getting that first Dockerfile together such that railway.app would actually accept and build it. Granted, once it was done it was done, but I didn't enjoy the process of getting to a finished result. I had heard of Shuttle by this point, but when I first discovered this beautiful thing, static file hosting was not yet available. It eventually came along and somewhere early in 2023 I delightedly started to work with static files. I started contributing to the Shuttle documentation for the feature, helping flesh out the instructions and hopefully making the feature easier for others to read, understand, and implement. Shuttle neatly and tidyly takes the pain of Rust deployments away, and I wanted to do my part in showing that to the world in the clearest way I could.
 
 ### Axum, with Static Files, on Shuttle
 
 [Axum](https://docs.rs/axum/latest/axum/index.html) is a Rust web application framework. It is relatively simple to get up and running with and it's become my go-to lately for doing things on the web with Rust. In February, I restarted Zero to Production in Rust, doing it in Axum instead of Actix. Unfortunately, I've had to halt that project because I've hit a patch that's just out of reach skill wise. I do intend on returning, but am taking a little hiatus for the time being. That hasn't stopped me from wanting to learn more about Axum.
 
-Unlike other Rust web frameworks like Actix, Axum doesn't have a built in system of middleware. Instead, Axum relies on the Tower ecosystem for creation of support middleware. As far as hosting of static files is concerned, this used to the the territory of the axum-extra crate, which featured a router for single page applications (SPA). The static files example in the Shuttle Docs is based around use of SpaRouter to serve up the files in the static folder that you can provision by annotating your code with `#[shuttle_static_folder::StaticFolder] static_folder: PathBuf`. SpaRouter was deprecated in version 0.6.0 of axum-extra, in favour of the services available through the `tower-http` crate.
+Unlike other Rust web frameworks like Actix, Axum doesn't have a built in system of middleware. Instead, Axum relies on the Tower ecosystem for creation of support middleware. As far as hosting of static files is concerned, this used to the the territory of the `axum-extra` crate, which featured a router for single page applications (SPA). The static files example in the Shuttle Docs is based around use of SpaRouter to serve up the files in the static folder that you can provision by annotating your code with `#[shuttle_static_folder::StaticFolder] static_folder: PathBuf`. SpaRouter was deprecated in version 0.6.0 of axum-extra, in favour of the services available through the `tower-http` crate.
 
 I've never liked the notion of relying on bits that are deprecated so I went on a journey, working out exactly how to replace the relative ease of SpaRouter with a similar one-liner. This [article](https://robert.kra.hn/posts/2022-04-03_rust-web-wasm/) by Robert Krahn, was an important find. Robert has kept it up to date, documenting how to get rid of SpaRouter using `ServeDir` from `tower-http::services`. The trouble is, I never understood his code. I set out with the intention of either explaining it (for all of you) or coming up with something simpler.
 

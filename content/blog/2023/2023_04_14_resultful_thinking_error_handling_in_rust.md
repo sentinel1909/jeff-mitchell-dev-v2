@@ -18,7 +18,7 @@ enum Result<T, E> {
 }
 ```
 
-I've yet to write a lot about generics yet, but similar to the Option enum, Result has two generic type parameters. The T represents the type that will be returned in a success case, it's wrapped in a n "Ok" variant. The E represents and error type that is reutrned in a failure case, it's wrapped in an "Err" variant.
+I've yet to write a lot about generics, but similar to the `Option` enum, Result has two generic type parameters. The T represents the type that will be returned in a success case, it's wrapped in a n "Ok" variant. The `E` represents and error type that is returned in a failure case, it's wrapped in an `Err` variant.
 
 Let's revisit the contrived example of a program that divides two numbers, as I used in the article on the Option enum:
 
@@ -45,7 +45,7 @@ fn main() {
 }
 ```
 
-In our main function, we declare a numerator variable and a denominator variable. We call the divide function, sending in the numerator and denominator as parameters. The divide function returns a Result, which will either contain our answer, or an error message. The body of the function uses an if statement to establish the return value, be it error or answer. If the denominator passed in as input is zero, this generates a string stating "Cannot divide by zero". The main function does a match on the answer value returned by the divide function. We either print out the answer, or print out our error message.
+In our main function, we declare a numerator variable and a denominator variable. We call the divide function, sending in the numerator and denominator as parameters. The divide function returns a `Result` type, which will either contain our answer, or an error message. The body of the function uses an if statement to establish the return value, be it error or answer. If the denominator passed in as input is zero, this generates a string stating "Cannot divide by zero". The main function does a match on the answer value returned by the divide function. We either print out the answer, or print out our error message.
 
 Handling errors in this way is very elegant. Rather than just throw out an error which could be not very meaningful, we can actually write code that explains very specifically what the issue is. The end result is code which is far more robust.
 
