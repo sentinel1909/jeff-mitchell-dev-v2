@@ -33,4 +33,4 @@ I recently subscribed to the [Rust Trends](https://rust-trends.com/) newsletter.
 
 ### Blog Highlight of the Week
 
-I discovered this blog post, [Tips for Faster Rust Compile times](https://corrode.dev/blog/tips-for-faster-rust-compile-times/?ref=dailydev) in my [daily.dev](https://daily.dev) feed this morning. Well worth a read!
+I discovered this blog post, [Prototyping in Rust](https://corrode.dev/blog/prototyping) in my [daily.dev](https://daily.dev) feed this morning. Well worth a read!
