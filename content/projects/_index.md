@@ -21,13 +21,19 @@ I mess about with stuff so that you don't have to. Anyone in their right mind wo
 
 [dev-blog-api](https://github.com/sentinel1909/dev-blog-api)
 
-I'm currently exploring [Apache OpenDAL](https://opendal.apache.org/) and it's ability to allow me to leverage Cloudflare R2 storage. I'm building an API for my developer blog, which will eventually serve to power a revised version of my blog. OpenDAL is excellent, and despite an initial learning curve hump, is turning out to be pretty straightforward to use. I have to admit I've bit off a little too much with this project, and it's sort of stalled here as 2024 closes. Will hopefully resume it in a few weeks.
+I'm currently exploring [Apache OpenDAL](https://opendal.apache.org/) and it's ability to allow me to leverage Cloudflare R2 storage. I'm building an API for my developer blog, which will eventually serve to power a revised version of this site. OpenDAL is excellent, and despite an initial learning curve hump, is turning out to be pretty straightforward to use. I have to admit I've bit off a little too much with this project, and it's sort of stalled here as 2024 closes. Will hopefully resume it in a few weeks.
 
 ### Frontend Development
 
 [Shuttle Template - Yew](https://github.com/sentinel1909/shuttle-template-yew)
 
 I don't want to be the billionth person learning React. I enjoy front end development with Rust and have been steadily picking up how to do things with [Yew](https://yew.rs). I think, unfortunately, Yew is kinda dead and not being actively developed. Don't let that stop you though, it's mature enough for production and is a viable choice for front end development using Rust and WebAssembly. I've created a template which uses Axum to serve up a Yew frontend site.
+
+### Fullstack Development
+
+[Astronomy Lover](https://astronomy-lover.net)
+
+This is a full stack site (not really an app yet) built with Axum on the backend an Leptos on the front. The front fetches the NASA Astronomy Photo of the Day, which is cached into a database managed by the Axum API. This project is completely overengineered for what it does, but it's been a valuable learning experience.
 
 ### Doing Things with Community Crates
 
