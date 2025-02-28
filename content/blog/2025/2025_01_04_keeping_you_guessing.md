@@ -2,14 +2,13 @@
 title = "Keeping You Guessing" 
 description = "An article providing my take on the Guessing Game program from Chapter 2 of The Rust Book"
 date = 2025-01-04
+updated = 2025-02-28
 authors = ["Jeff Mitchell"]
 draft = false
 [taxonomies]
 categories = ["Beginner's Guides"]
 tags = ["rust", "projects"]
 +++
-
-(_Author's Note_: Posted first at [dev.to](https://dev.to))
 
 If you've been following my writings at all, you'll notice a lot of what I think of as beginner oriented content about the Rust programming language. It's my attempt to put my understanding of the topic at hand into words and ideas that I can go back to later. It may not always be complete or provide the best picture, but it supplements learning I do elsewhere.
 

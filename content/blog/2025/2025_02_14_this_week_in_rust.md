@@ -1,7 +1,7 @@
 +++
 title = "This Week in Rust" 
 description = "A link to the latest \"This Week in Rust\" publication, plus whatever else I've found interesting"
-date = 2025-02-24
+date = 2025-02-14
 authors = ["Jeff Mitchell"]
 draft = false
 [taxonomies]
